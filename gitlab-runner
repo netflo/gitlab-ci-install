@@ -1,0 +1,6 @@
+
+#the runner can be installed via   
+apt install gitlab-runner
+#then
+gitlab-runner register
+#enter ip for gitlab server + token found under the CI/ Runner settings of the server
