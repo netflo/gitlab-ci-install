@@ -1,0 +1,27 @@
+# gitlab-ci-install
+
+in a folder:
+vagrant init
+
+vagrant box
+vagrant box list   # (gives you the   build/OS you can install)
+
+#Report this info into the Vagrantfile
+vi Vagrantfile
+find the line and replace the text @:  config.vm.box = "(build here)"
+find the line, uncomment and replace the text @:  config.vm.network = "(valid IP here)"
+find the line, uncomment and replace the text @:  config.vm.virtualbox = "(valid IP here)"
+find the line, uncomment and replace the text @:  vb.memory = "2048"
+uncomment   end
+
+vagrant up
+
+vagrant ssh  (to get to the box)
+lsb_release -a  (to look at linux distro info)
+
+
+====  ====
+
+https://github.com/smarly-net/aspnet-core-ci-docker
+
+
