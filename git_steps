@@ -1,0 +1,17 @@
+
+
+when in develop branch and wanting to merge to production to deploy code:
+
+git checkout production
+
+git pull #pull code from production
+
+git merge develop   #merges develop into prod because we checked it out!
+
+files may be missing so  conflicts etc..
+git add .
+git commit -am "about to push to production"
+
+git push
+
+
