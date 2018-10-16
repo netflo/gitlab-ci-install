@@ -1,0 +1,9 @@
+
+#if gitlab does not show the right URL then need to edit the following file:
+
+docker exec -i -t {containerID} bash
+#then
+vi /etc/gitlab/gitlab.rb
+
+and uncomment and update the EXTERNAL_URL variable with the appropriate values
+
