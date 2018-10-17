@@ -1,0 +1,7 @@
+
+
+#need to clone rather than fetch to have a clean env when forking to a new branch
+under settings pick CLONE
+
+
+
