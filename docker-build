@@ -1,0 +1,24 @@
+
+edit .Dockerfile in a folder
+
+if I have file say script.sh
+with say:
+
+content is:
+FROM baseimage (for example baseimage=alpine)
+COPY script.sh /script.sh
+CMD = ["/script.sh"]                  (CMD means:  this is like the entry point to running the container)
+
+if a command with parameters:
+#CMD = ["echo", "an array with 1 or more parameters delimited by a comma"]
+
+
+then time to build with:
+
+docker build .    <== builds from the local .Dockerfile
+A docker ID (long hex number) will be the unique build ID.
+I can then run it with:
+docker run --name test hex_id_here
+
+
+youtube.com/watch?v=YFl2mCHdv24
